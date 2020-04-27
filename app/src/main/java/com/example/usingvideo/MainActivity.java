@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
                 "/" + R.raw.usingvideo);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
+        videoView.setMediaController(mediaController);
         videoView.start();
     }
 }
